@@ -16,7 +16,7 @@ const storage = multer.diskStorage({
     }
 })
 
-const upload = multer({ dest: "./uploads" , storage})
+const upload = multer({ storage: storage})
 
 const routes = (app) => {
     // Configura o aplicativo para interpretar requisições com corpo no formato JSON
